@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #ffeaea;
+    background-attachment: inherit;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.Catalogue {
+    position: relative;
+    width: 100%;
+    height: 10;
+    font-family: Short Stack;
+}

@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+
+}
+ margin-top: 0;
+ font-family: Verdana, sans-serif;
+ font-size: 22px;
+}
+#wrapper{
+ margin-left: auto;
+ margin-right: auto;
+ }
+
+a:link, a:visited {
+ font-style: arial;
+ color: black;
+ }
+
+}
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 170px;
+    height: 320px;
+    padding: 14px;
+    background-color: #FDFDFD;
+}
+.column a {
+    float: none;
+    color: #565656;
+    padding: 25px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.column a:hover {
+    background-color: #F07575 ;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*Ini bahagian footer*/
+#copyright{
+ color:black;
+ text-align: center;
+ padding: 20px;
+ margin-left: auto;
+ margin-right: auto;
+ font-size: 9px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* Style inputs, select elements and textareas */
+input[type=text], input[type=email], input[type=item], input[type=number], input[type=date], textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit]{
+  background-color: #8FACB2;
+  color: black;
+  padding: 8px 15px 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+}
+
+/* Style the reset button */
+input[type=reset] {
+  background-color: #8FACB2;
+  color: black;
+  padding: 8px 15px 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+ }
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+#form-element .required{
+	color:red;
+
+}
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CAKEY SCARF</title>
+<meta charset="UTF-8">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffe6e6;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  font-family: arial black;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #ffcccc;
+}
+.active {
+  background-color: #ffcccc;
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="index.html">HOME</a></li>
+  <li><a href="Cakey Scarf Catalogue.html">BAWAL SHAWL</a></li>
+  <li><a href="order.html">ORDER</a></li>
+  <li><a href="ourpeople.html">OUR PEOPLE</a></li>
+  <li><a href="aboutus.html">ABOUT US</a></li>
+</ul>
+
+
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="Images/tudung1.jpeg"
+  style="width:100%">
+  <img class="mySlides" src="Images/tudung2.jpeg"
+  style="width:100%">
+  <img class="mySlides" src="Images/tudung3.jpeg"
+  style="width:100%">
+</section>
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+</head>
+<body>
+
+<center><h1><i>ABOUT CAKEY SCARF </i></h1>
+      </center>
+      <center>
+         <p> &nbsp Since our first day in business, Cakey Scarf has been offering our customer the best selection of products at unbeatable prices. Our online store has become 
+		 synonymous with quality and we ensure a continuous variety of fantastic merchandise along with unique limited edition and seasonal items that fit any budget. 
+		 Cakey Scarf is your go-to place for gifts & goodies that surprise & delight. From a simple type of scarf, we make finding 
+            your perfect something special a happy-memory-making experience. Searching for new seasonal creations 
+            or your favorite discontinued scents? We’ve got you covered there, too. Oh! And while you're browsing,
+            shop our latest & greatest selection of scarf! Check out and start shopping today!</p>
+</center>
+
+<br>
+<center>
+<video width="700" height="395" controls>
+   <source src="video/Cakeyscarf.vid1.mp4" type="video/mp4">
+   </video>
+   </center>
+</br>
+
+<form>
+
+      <label>Subscribe us</label>
+     
+</div>
+
+<br>
+<div>
+     <label>Name:</label>
+     <input type="text">
+</div>
+         
+<br>
+<div>
+     <label>Email:</label>
+     <input type="text">
+</div>
+
+<br>
+<div>
+     <input type="Submit">
+</div>
+</form>
+
+<br>
+<br>
+<footer>
+<center>
+<div id="copyright">COPYRIGHT BY CAKEYSCARF @ 2022</div>
+</center>
+</footer>
+
+</body>
+</html>
+
+

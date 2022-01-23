@@ -1,0 +1,294 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport"
+content="width=device-width, initialscale=1">
+<link rel="stylesheet"
+href="https://code.jquery.com/mobile/1
+.4.5/jquery.mobile-1.4.5.min.css">
+<script
+src="https://code.jquery.com/jquery1.11.3.min.js"></script>
+<script
+src="https://code.jquery.com/mobile/1.
+4.5/jquery.mobile1.4.5.min.js"></script>
+<link rel="stylesheet" type="text/css" href="CSS/order.css" />
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<meta charset="utf-8">
+<title>ORDER</title>
+<style>
+h1 {
+  border-top: 1px solid black;
+  
+}
+</style>
+</head>
+<body>
+<style type="text/css">
+</style>
+</head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffe6e6;
+}
+
+li {
+  float: left;
+}
+
+li a {
+   font-family: arial black;
+  display: block;
+  color: #ffcccc;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #ffcccc;
+}
+.active {
+  background-color: #ffcccc;
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="index.html">HOME</a></li>
+  <li><a href="Cakey Scarf Catalogue.html">BAWAL SHAWL</a></li>
+  <li><a href="order.html">ORDER</a></li>
+  <li><a href="ourpeople.html">OUR PEOPLE</a></li>
+  <li><a href="aboutus.html">ABOUT US</a></li>
+</ul>
+
+    <div id="maincontent">
+	<br>
+	<center>
+  <h3>ORDER DETAILS</h3>
+   <h1></h1>
+  </center>
+<form  id="form-element" onsubmit="myFunction()" method="post" name="myForm" required>
+<div class="container">
+  <form>
+    <div class="row">
+	<div class="img"><h3><img src = "Images/lorry.jpg" width = "50" height = "45"/>&nbsp Shipping Details</h3>
+	
+      <div class="col-25">
+        <label for="fname">Full Name</label><span class="required">*</span>
+      </div>
+      <div class="col-75">
+	   <input type="text" id="fname" name="fullname" placeholder="Full name" pattern="(?=.*[@]" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Email</label><span class="required">*</span>
+      </div>
+      <div class="col-75">
+        <input type="email" id="email" name="Email" placeholder="Email" pattern="(?=.*[@]" required> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="address">Address</label><span class="required">*</span>
+      </div>
+      <div class="col-75">
+        <textarea type"text" id="address" name="address" placeholder="Address" style="height:200px"pattern="(?=.*[@]" required ></textarea>
+      </div>
+    </div>
+	<div class="row">
+      <div class="col-25">
+        <label for="Item">Code</label><span class="required">*</span>
+      </div>
+      <div class="col-75">
+	  <input type="item" id="item" name="item" placeholder="eg: BG01 A,E,S" pattern="(?=.*[@]" required>
+      </div>
+    </div>
+
+	<div class="row">
+      <div class="col-25">
+        <label for="quantity">Quantity</label><span class="required">*</span>
+      </div>
+      <div class="col-75">
+	  <input type="number" id="quantity" name="quantity" pattern="(?=.*[@]" required>
+      </div>
+    </div>
+	<br>
+	<br>
+	
+	<h3><img src="Images/card.png" width="50" height="45"/>&nbsp Payment Information</h2>
+	<label for="cards">Accepted Cards</label>
+	
+	<br>
+	
+	<div class="row">
+      <div class="col-25">
+        <label for="namecard">Name on Card</label><span class="required">*</span>
+      </div>
+      <div class="col-75">	  
+	   <input type="text" id="namecard" name="namecard" placeholder="Name on Card" pattern="(?=.*[@]" required>
+      </div>
+    </div>
+	
+	<div class="row">
+      <div class="col-25">
+        <label for="cardnumber">Credit Card Number</label><span class="required">*</span>
+      </div>
+      <div class="col-75">
+        <input type="text" id="cardnumber" name="cardnumber" maxlength="11" placeholder="0000-000-0000"  pattern="(?=.*[@]" required>
+      </div>
+    </div>
+	
+	<div class="row">
+      <div class="col-25">
+        <label for="expDate">Expired Date</label><span class="required">*</span>
+      </div>
+      <div class="col-75">
+        <input type="date" id="expDate" name="expDate" pattern="(?=.*[@]" required>
+      </div>
+    </div>
+	
+    <div class="row">
+	<br>
+      <input type="submit" value="Checkout" id="validateSubmit" onclick="getConfirmation();" />
+	  <input type="reset" value="Reset" id="resetbtn">
+	  </br>
+	  
+		  <script>
+                                     function myFunction() {
+                                      alert("The form was submitted");
+                                         }						
+var myInput = document.getElementById("psw");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var length = document.getElementById("length");
+
+// When the user clicks on the password field, show the message box
+myInput.onfocus = function() {
+  document.getElementById("message").style.display = "block";
+}
+
+// When the user clicks outside of the password field, hide the message box
+myInput.onblur = function() {
+  document.getElementById("message").style.display = "none";
+}
+
+// When the user starts to type something inside the password field
+myInput.onkeyup = function() {
+  // Validate lowercase letters
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {  
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+  }
+  
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {  
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  
+  // Validate length
+  if(myInput.value.length >= 6) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+
+}
+	
+      function myFunction() {
+      alert("The form was submitted");
+      }
+	  </script>
+<script>
+ var buttonFormValidate = new ej.buttons.Button({
+        isPrimary: true
+    });
+    buttonFormValidate.appendTo('#validateSubmit');
+    // Initialize the Reset Button.
+    var buttonReset = new ej.buttons.Button();
+    buttonReset.appendTo('#resetbtn');
+    var options = {
+        // Initialize the CustomPlacement.
+        customPlacement: function (inputElement, errorElement) {
+            inputElement.parentElement.appendChild(errorElement);
+        }
+    };
+
+    // Initialize the FormValidator.
+    var formObj = new ej.inputs.FormValidator('#formId', options);
+    document.getElementById('formId').addEventListener("submit", function (e) {
+        e.preventDefault();
+        if (formObj.validate()) {
+            alert('Your form has been submitted.');
+            formObj.reset();
+        }
+    });
+
+</script>  
+	  	  
+	  <script>
+      function myFunction() {
+      alert("The form was submitted");
+      }
+	  </script>
+	 
+	  <script>
+
+<script>
+ var buttonFormValidate = new ej.buttons.Button({
+        isPrimary: true
+    });
+    buttonFormValidate.appendTo('#validateSubmit');
+    // Initialize the Reset Button.
+    var buttonReset = new ej.buttons.Button();
+    buttonReset.appendTo('#resetbtn');
+    var options = {
+        // Initialize the CustomPlacement.
+        customPlacement: function (inputElement, errorElement) {
+            inputElement.parentElement.appendChild(errorElement);
+        }
+    };
+
+    // Initialize the FormValidator.
+    var formObj = new ej.inputs.FormValidator('#formId', options);
+    document.getElementById('formId').addEventListener("submit", function (e) {
+        e.preventDefault();
+        if (formObj.validate()) {
+            alert('Your form has been submitted.');
+            formObj.reset();
+        }
+    });
+
+</script>
+    </div>
+  </form>
+  <br><br>
+</div>
+
+<footer>
+<center>
+<div id="copyright">COPYRIGHT BY CAKEYSCARF @ 2022</div>
+</center>
+ </footer>
+</body>
+</html>
+
+
+

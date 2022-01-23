@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="CSS/aboutus.css" />
+<meta charset="utf-8">
+<title>ABOUT US</title>
+</head>
+
+<body >
+
+ <ul>
+  <li><a class="active" href="index.html">HOME</a></li>
+  <li><a href="Cakey Scarf Catalogue.html">BAWAL SHAWL</a></li>
+  <li><a href="order.html">ORDER</a></li>
+  <li><a href="ourpeople.html">OUR PEOPLE</a></li>
+  <li><a href="aboutus.html">ABOUT US</a></li>
+</ul>
+
+<br>
+
+
+<center><h6></h6></center>
+<center><h2>CONTACT ME</h2></center>
+<center><p>We want to hear from you!</p></center>
+<center><p>Chat with us. There are associates available, with no expected wait.</p></center>
+<center><p>We won’t serve customers with attitude of “because this is our job to make customer satisfying with our services”</p></center>
+<center><h2>How to contact us?</h2></center>
+<center><p>If you have any doubts/suggestion/comments about us, our products or our site, do not hestitate to contact us!</p></center>
+<center><p>Email: CakeyScarveCs@gmail.com Tel: 04-7876562  FB: CakeyScarvehq  IG: CakeyScarve</center></p>
+<center><h2>Vision</h2></center>
+<center><p>Make cakey scarf combine steady growth, regular earnings, and strict risk management with rational in the fashion industry</p></center>
+<center><h2>Mission</h2></center>
+<center><p>Provide the best possible service to customer with guaranteed quality of scarf</p></center>
+<center><p>Preserve and provide high quality facilities and trendy fashion</p></center>
+<center><p>To deliver satisfaction and joy to the client while using the service</p></center>
+<center><h6></h6></center>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<h4><p>&nbsp <i class="fa fa-phone" style="font-size:36px"></i><a href="tel:047876562">Phone : 04-7876562</a></p></h4>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<h4><p>&nbsp <i class="material-icons" style="font-size:36px">email</i><a href="mailto:CakeyScarveCs@gmail.com">Email : CakeyScarveCs@gmail.com</a></p></h4>
+<br>
+<div>
+  <div ><i></i></div>
+  <form  method="get" onsubmit="myFunction()">
+    <div class="input-user">
+
+
+<fieldshit>
+<br>
+    <div class="input-user">
+	<input type="email" id="email" name="Email" placeholder="Email" pattern="(?=.*[@]" required>
+	</div>
+
+      <div class="input-user">
+	  <input type="text" id="message" name="message" placeholder="Message" pattern="(?=.*[@]" required>
+
+	  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+		<button type="submit" class="btn"><i class='fas fa-paper-plane'></i> &nbsp Send Message</button>
+		<br>
+</div>
+<br>
+<br>
+<footer>
+<center><div id="copyright">COPYRIGHT BY CAKEY SCARF @ 2022</center></div>
+ </footer>
+</body>
+</html>
